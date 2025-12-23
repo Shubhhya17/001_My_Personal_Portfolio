@@ -18,7 +18,7 @@
     <link rel="icon" href="images/favicon.ico">
 
 
-</head>
+</head>         
 
 <body>
 
@@ -62,17 +62,18 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/Pass.png" alt="photo">
+                    <img src="images/Pass2.jpg" alt="photo">
                 </div>
                 <div class="column right">
                     <div class="text"> I have Knowledge in <span class="typing-2"></span></div>
-                    <p>I am a passionate software engineer with a keen interest in technology and a drive to innovate. A
-                        graduate of Sant Gadge Baba Amravati University, I have developed strong skills in <b>Java, C,
-                            DSA, and Computer Fundamentals</b>, alongside a solid understanding of software development
-                        principles. I thrive in collaborative environments and continuously seek opportunities to expand
-                        my knowledge. With a commitment to lifelong learning and a desire to make a positive impact
-                        through technology, I am eager to contribute to dynamic projects and grow further as a software
-                        engineer.</p>
+                    <p>
+                        I am a passionate software developer who enjoys building modern, responsive, and user-friendly web applications.
+                        I have hands-on experience with <b>HTML, CSS, JavaScript, React, Next.js, and Git/GitHub</b>, and I have worked on
+                        real-world projects where I focused on clean UI, smooth user experience, and responsive design. I am currently
+                        learning the <b>MERN stack</b> to enhance my full-stack development skills and gain deeper industry-level experience.
+                        </p>
+                                         
+                        
                     <a href="https://www.linkedin.com/in/shubham-pawar1703/" download>Download CV</a>
 
                 </div>
@@ -154,14 +155,19 @@
                     <!--**************** I am Changing from her********************-->
                     <div class="text">My creative skills & experiences.</div>
                     <p>
-                        I have a strong foundation in Java for developing robust backend logic, versatile applications, and implementing data structures and algorithms. My expertise in HTML, CSS, Bootstrap, and JavaScript enables me to create responsive, visually appealing, and interactive web interfaces. Additionally, I am skilled in React for building dynamic front-end applications and MySQL for efficient database management. With experience in Git and GitHub, I am adept at version control and collaborative development.
-                    <p/>
+                        I have strong hands-on experience in <b>HTML, CSS, JavaScript, React, and Next.js</b>, which allows me to build
+                        responsive, scalable, and user-friendly web interfaces. I am comfortable working with modern UI layouts,
+                        component-based architecture, and reusable code patterns. I also have experience using <b>Git and GitHub</b> for
+                        version control and collaborative development. Currently, I am learning the <b>MERN stack</b> to expand my skills
+                        toward full-stack application development.
+                        </p>
+                        
                     <a href="https://github.com/Shubhhya17">Read more</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
-                            <span>Java</span>
+                            <span>React</span>
                             <span>80%</span>
                         </div>
                         <div class="line Java"></div>
@@ -169,15 +175,15 @@
 
                     <div class="bars">
                         <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>
+                            <span>Next</span>
+                            <span>80%</span>
                         </div>
                         <div class="line HTML"></div>
                     </div>
 
                     <div class="bars">
                         <div class="info">
-                            <span>CSS</span>
+                            <span>JavaScript</span>
                             <span>70%</span>
                         </div>
                         <div class="line CSS"></div>
@@ -185,7 +191,7 @@
 
                     <div class="bars">
                         <div class="info">
-                            <span>JavaScript</span>
+                            <span>CSS</span>
                             <span>80%</span>
                         </div>
                         <div class="line JavaScript"></div>
@@ -193,7 +199,7 @@
 
                     <div class="bars">
                         <div class="info">
-                            <span>Bootstrap</span>
+                            <span>Node</span>
                             <span>60%</span>
                         </div>
                         <div class="line Bootstrap"></div>
@@ -201,8 +207,8 @@
 
                     <div class="bars">
                         <div class="info">
-                            <span>React</span>
-                            <span>64%</span>
+                            <span>Mongo</span>
+                            <span>70%</span>
                         </div>
                         <div class="line React"></div>
                     </div>
@@ -452,11 +458,19 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Form Data Here -->
                 <div class="column right">
                     <div class="text">Message me</div>
 
 
-                    <form action="#" onsubmit="sendEmail();reset(); return false;">
+                    <!-- <form action="#" onsubmit="sendEmail();reset(); return false;"> -->
+                        <!-- <form id="contactForm"> -->
+                            <!-- <form id="contactForm"
+      action="https://formspree.io/f/xvzplypo"
+      method="POST">
+
+
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" class="item" placeholder="Name" id="name" required>
@@ -476,7 +490,46 @@
                         <div class="button-area">
                             <button type="submit">Send message</button>
                         </div>
-                    </form>
+                    </form> -->
+
+                    <form action="https://formspree.io/f/xvzplypo" method="POST">
+
+                        <div class="fields">
+                          <div class="field name">
+                            <input type="text" name="name" placeholder="Name" required>
+                          </div>
+                      
+                          <div class="field email">
+                            <input type="email" name="email" placeholder="Email" required>
+                          </div>
+                        </div>
+                      
+                        <div class="field subject">
+                          <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                      
+                        <div class="field textarea">
+                          <textarea name="message" placeholder="Message.." required></textarea>
+                        </div>
+                      
+                        <button
+                        type="submit"
+                        class="submit-btn"
+                        style="
+                          background-color: crimson;
+                          color: white;
+                          padding: 12px 28px;
+                          border: none;
+                          border-radius: 6px;
+                          font-size: 16px;
+                          font-weight: 600;
+                          cursor: pointer;
+                        ">
+                        Send message
+                      </button>
+                      
+                      </form>
+                      
 
                 </div>
             </div>
@@ -488,9 +541,20 @@
         <span><a href="https://www.codingnepalweb.com"></a><span class="far fa-copyright"></span> Copyright reserved by
             Shubham.</span>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="script.js"></script>
+
+
+                   
+    <!-- AI Chatbot -->
+    <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="189af3ef-13c1-4a1e-a8d3-a18dd59c3bd0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+    
+    <script src="//code.tidio.co/ogmuxc7nbhzp4kkc8nebd93kv5wrbr9n.js" async></script>
+
 </body>
 
 </html>

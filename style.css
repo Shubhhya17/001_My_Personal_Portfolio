@@ -111,7 +111,7 @@ section .title::after{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+ .navbar .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -154,6 +154,8 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
+
+
 .scroll-up-btn{
     position: fixed;
     height: 45px;
